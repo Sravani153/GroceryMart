@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Organic Vegetable Mart</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="nav-background">
+            <div class="mobile-logo">
+                <img src="./icons/Logo.jpg" alt="">
+            </div>
+            <div class="mobile-nav">
+                <div class="cart">
+                    <div class="flex items-center">
+
+                        <div class="smallMenuLogo">
+                            <img src="./icons/Logo.jpg" alt="">
+                        </div>
+                        <a href="#">0 Items - ($0.00)</a>
+                    </div>
+                </div>
+                <div class="nav-top" style="display: inline;">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                        <li>
+                            <a href="#">Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+
+                        <li>
+                            <ul>
+                                <li>
+                                    <!-- login -->
+                                    <div>
+                                        <a onclick="document.getElementById('id01').style.display='block'"
+                                            style="width:auto;" href="#">Login</a>
+
+                                        <div id="id01" class="modal">
+
+                                            <form class="modal-content animate" action="/action_page.php" method="post">
+                                                <div class="imgcontainer">
+                                                    <span onclick="document.getElementById('id01').style.display='none'"
+                                                        class="close" title="Close Modal">&times;</span>
+                                                    <img src="images/img_avatar2.jpg" alt="Avatar" class="avatar">
+                                                </div>
+
+                                                <div class="container">
+                                                    <label for="uname"><b>Username</b></label>
+                                                    <input type="text" placeholder="Enter Username" name="uname"
+                                                        required>
+
+                                                    <label for="psw"><b>Password</b></label>
+                                                    <input type="password" placeholder="Enter Password" name="psw"
+                                                        required>
+                                                    <div class="nav-button">
+                                                        <button type="submit">Login</button>
+                                                    </div>
+                                                    <label>
+                                                        <input type="checkbox" checked="checked" name="remember">
+                                                        Remember me
+                                                    </label>
+                                                </div>
+
+                                                <div class="container cancle-btn" style="background-color:#f1f1f1">
+                                                    <button type="button"
+                                                        onclick="document.getElementById('id01').style.display='none'"
+                                                        class="cancelbtn">Cancel</button>
+                                                    <span class="psw"> <a href="#" style="color:#0d6efd;">Forgot
+                                                            password?</a></span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!--xx login xx-->
+                                </li>
+
+                                <li>
+                                    <!-- Register -->
+                                    <div>
+                                        <a onclick="document.getElementById('id02').style.display='block'"
+                                            style="width:auto;" href="#">Register</a>
+                                        <div id="id02" class="modal">
+
+                                            <form class="modal-content animate" action="/action_page.php" method="post">
+                                                <div class="imgcontainer">
+                                                    <span onclick="document.getElementById('id02').style.display='none'"
+                                                        class="close" title="Close Modal">&times;</span>
+                                                    <img src="images/img_avatar2.jpg" alt="Avatar" class="avatar">
+                                                </div>
+
+                                                <div class="container">
+                                                    <label for="name"><b>Name</b></label>
+                                                    <input type="text" placeholder="Enter Username" name="uname"
+                                                        required>
+
+                                                    <label for="number"><b>Mobile No</b></label>
+                                                    <input type="number" placeholder="Enter Mobile No" name="number"
+                                                        required>
+
+                                                    <label for="email"><b>Email</b></label>
+                                                    <input type="email" placeholder="Enter Email" name="email" required>
+
+                                                    <label for="psw"><b>Password</b></label>
+                                                    <input type="password" placeholder="Enter Password" name="psw"
+                                                        required>
+
+                                                    <div class="nav-button">
+                                                        <button type="submit">Register</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        </nav>
+                                    </div>
+                                    <!--xx Register xx-->
+
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact flex items-center">
+                    <img src="./icons/phone.svg" alt="">
+                    <div>
+                        <h5>Call us: (+91) 1234566789</h5>
+                        <h6>E-mail :Grocerymania@vegetables.com</h6>
+                    </div>
+                </div>
+                <div class="logo flex items-center">
+                    <img src="./icons/logo.jpg" alt="" width="25px">
+                </div>
+                <div class="time flex items-center">
+                    <img src="./icons/clock.svg" alt="">
+                    <div>
+                        <h5>Working Hours:</h5>
+                        <h6>Mon - Sat (8.00am - 12.00am)</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-content-wrapper">
+            <div class="nav-trigger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-bar-chart">
+                    <line x1="12" y1="20" x2="12" y2="10" />
+                    <line x1="18" y1="20" x2="18" y2="4" />
+                    <line x1="6" y1="20" x2="6" y2="16" />
+                </svg>
+            </div>
+            <div class="site-content">
+                <header class="topbar">
+                    <div class="container flex justify-between">
+                        <div class="icons">
+                            <a href="#"><img src="./icons/facebook.svg" alt=""></a>
+                            <a href="#"><img src="./icons/twitter.svg" alt=""></a>
+                            <a href="#"><img src="./icons/google.svg" alt=""></a>
+                            <a href="#"><img src="./icons/instagram.svg" alt=""></a>
+                            <a href="#"><img src="./icons/search.svg" alt=""></a>
+                        </div>
+
+                        <div class="auth flex items-center">
+                            <!-- login -->
+                            <div>
+                                <a onclick="document.getElementById('id03').style.display='block'" style="width:auto;"
+                                    href="#">Login</a>
+
+                                <div id="id03" class="modal">
+
+                                    <form class="modal-content animate" action="/action_page.php" method="post">
+                                        <div class="imgcontainer">
+                                            <span onclick="document.getElementById('id03').style.display='none'"
+                                                class="close" title="Close Modal">&times;</span>
+                                            <img src="images/img_avatar2.jpg" alt="Avatar" class="avatar">
+                                        </div>
+
+                                        <div class="container">
+                                            <label for="uname"><b>Username</b></label>
+                                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                            <label for="psw"><b>Password</b></label>
+                                            <input type="password" placeholder="Enter Password" name="psw" required>
+                                            <div class="nav-button">
+                                                <button type="submit">Login</button>
+                                            </div>
+                                            <label>
+                                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                                            </label>
+                                        </div>
+
+                                        <div class="container cancle-btn" style="background-color:#f1f1f1">
+                                            <button type="button"
+                                                onclick="document.getElementById('id03').style.display='none'"
+                                                class="cancelbtn">Cancel</button>
+                                            <span class="psw"> <a href="#" style="color:#0d6efd;">Forgot
+                                                    password?</a></span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!--xx login xx-->
+
+                            <span class="divider">|</span>
+
+                            <!-- Register -->
+                            <div>
+                                <a onclick="document.getElementById('id04').style.display='block'" style="width:auto;"
+                                    href="#">Register</a>
+                                <div id="id04" class="modal">
+
+                                    <form class="modal-content animate" action="/action_page.php" method="post">
+                                        <div class="imgcontainer">
+                                            <span onclick="document.getElementById('id04').style.display='none'"
+                                                class="close" title="Close Modal">&times;</span>
+                                            <img src="images/img_avatar2.jpg" alt="Avatar" class="avatar">
+                                        </div>
+
+                                        <div class="container">
+                                            <label for="name"><b>Name</b></label>
+                                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                            <label for="number"><b>Mobile No</b></label>
+                                            <input type="number" placeholder="Enter Mobile No" name="number" required>
+
+                                            <label for="email"><b>Email</b></label>
+                                            <input type="email" placeholder="Enter Email" name="email" required>
+
+                                            <label for="psw"><b>Password</b></label>
+                                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                            <div class="nav-button">
+                                                <button type="submit">Register</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                </nav>
+                            </div>
+                            <!--xx Register xx-->
+
+                            <span class="divider">|</span>
+                            <div>
+                                <img src="./icons/cart.svg" alt="" width="25px">
+                                <a href="#">0 Items - ($0.00)</a>
+                            </div>
+                            <span class="divider">|</span>
+                            <div>
+                                <a href="#" class="glyphicon glyphicon-heart" style="width: 25px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <nav>
+                    <div class="top">
+                        <div class="container flex justify-between">
+                            <div class="contact flex items-center">
+                                <img src="./icons/phone.svg" alt="">
+                                <div>
+                                    <h3>Call us: (+91) 1233456788</h3>
+                                    <h5>E-mail : Grocerymania@vegetables.com</h5>
+                                </div>
+                            </div>
+                            <div class="branding">
+                                <img src="./icons/Logo.jpg" alt="" style="
+                                width: 200px;height:100px
+                            ">
+
+                            </div>
+                            <div class="time flex items-center">
+                                <img src="./icons/clock.svg" alt="">
+                                <div>
+                                    <h3>Working hours:</h3>
+                                    <h5>Mon - Sat (8.00am - 12.00am)</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar magic-shadow">
+                        <div class="container flex justify-center">
+                            <a href="#">Home</a>
+                            <a href="#">About us</a>
+                            <a href="#">Products</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Shop</a>
+                            <a href="#">Services</a>
+                            <a href="#">Gallery</a>
+                            <a href="#">Contact us</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Header Section for slide show By Mohan Patel -->
+                <header id="header">
+                    <div class="slideContainer">
+
+                        <div class="intro mySlides  home1">
+                            <div class="overlay">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-8 col-md-offset-2 intro-text">
+                                            <span class="welcome">Welcome to</span>
+                                            <h1>Farm Fresh , </h1>
+
+
+                                            <h1>Grown with <span class="welcome">Love</span></h1>
+                                            <p><br>Our vegetable farm provides the best fresh vegetables for local
+                                                residents,
+                                                markets, and
+                                                stores in our state.</br></p>
+                                            <button class="btn btn-primary">Read More</button>
+                                            <button class="btn btn-secondary">Shop Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="intro mySlides  home2">
+                            <div class="overlay">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-8 col-md-offset-2 intro-text">
+
+                                            <span class="welcome">Welcome to</span>
+                                            <h1>Farm Fresh , </h1>
+
+                                            <h1>Grown with <span class="welcome">Love</span></h1>
+                                            <p><br>Our vegetable farm provides the best fresh vegetables for local
+                                                residents,
+                                                markets, and
+                                                stores in our state.</br></p>
+                                            <button class="btn btn-primary">Read More</button>
+                                            <button class="btn btn-secondary">Shop Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="intro mySlides  home3">
+                            <div class="overlay">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-8 col-md-offset-2 intro-text">
+                                            <span class="welcome">Welcome to</span>
+                                            <h1>Farm Fresh , </h1>
+
+
+                                            <h1>Grown with <span class="welcome">Love</span></h1>
+                                            <p><br>Our vegetable farm provides the best fresh vegetables for local
+                                                residents,
+                                                markets, and
+                                                stores in our state.</br></p>
+                                            <button class="btn btn-primary">Read More</button>
+                                            <button class="btn btn-secondary">Shop Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Next and previous buttons -->
+                        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+                        <br>
+
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+
+                </header>
+
+                <section class="top-products">
+                    <div class="container">
+                        <h1 class="section-heading">Top products</h1>
+                        <div class="slider">
+                            <button class="slider-btn prev-btn"><img src="./icons/pre.svg" alt=""></button>
+                            <button class="slider-btn next-btn"><img src="./icons/next.svg" alt=""></button>
+                            <div class="food-slider">
+                                <div class="food-card magic-shadow-sm">
+                                    <div class="product-image flex items-center justify-center">
+                                        <img src="./images/potato.png" alt="">
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <h2 class="text-center">Potatoes</h2>
+                                        <div class="stars flex justify-center items-center">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/star-grey.svg" alt="">
+                                            <img src="./icons/star-grey.svg" alt="">
+                                        </div>
+                                        <div class="price text-center">
+                                            $ 13.00
+                                        </div>
+                                        <div class="flex justify-center">
+                                            <button>
+                                                <img src="./icons/cart-2.svg" alt="">
+                                                <span>Add to cart</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="food-card magic-shadow-sm">
+                                    <div class="product-image flex items-center justify-center">
+                                        <img src="./images/carrot.png" alt="">
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <h2 class="text-center">Carrots</h2>
+                                        <div class="stars flex justify-center items-center">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/star-grey.svg" alt="">
+                                            <img src="./icons/star-grey.svg" alt="">
+                                        </div>
+                                        <div class="price text-center">
+                                            $ 17.00
+                                        </div>
+                                        <div class="flex justify-center">
+                                            <button>
+                                                <img src="./icons/cart-2.svg" alt="">
+                                                <span>Add to cart</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="food-card magic-shadow-sm">
+                                    <div class="product-image flex items-center justify-center">
+                                        <img src="./images/pepper.png" alt="">
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <h2 class="text-center">Sweet Peppers</h2>
+                                        <div class="stars flex justify-center items-center">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/star-grey.svg" alt="">
+                                            <img src="./icons/star-grey.svg" alt="">
+                                        </div>
+                                        <div class="price text-center">
+                                            $ 22.00
+                                        </div>
+                                        <div class="flex justify-center">
+                                            <button>
+                                                <img src="./icons/cart-2.svg" alt="">
+                                                <span>Add to cart</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="food-card magic-shadow-sm">
+                                    <div class="product-image flex items-center justify-center">
+                                        <img src="./images/cucumber.png" alt="">
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <h2 class="text-center">Cucumbers</h2>
+                                        <div class="stars flex justify-center items-center">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/start-filled.svg" alt="">
+                                            <img src="./icons/star-grey.svg" alt="">
+                                            <img src="./icons/star-grey.svg" alt="">
+                                        </div>
+                                        <div class="price text-center">
+                                            $ 14.00
+                                        </div>
+                                        <div class="flex justify-center">
+                                            <button>
+                                                <img src="./icons/cart-2.svg" alt="">
+                                                <span>Add to cart</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center btn-wrapper">
+                            <button class="btn btn-secondary">View More</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="about-meal">
+                    <div class="container">
+                        <h1 class="section-heading">About Farm Fresh</h1>
+                        <div class="about-meal-wrap flex">
+                            <div class="flex-1">
+                                <img src="./images/about.jpg" alt="">
+                            </div>
+                            <div class="flex-1">
+                                <h2>A Few Words About Our Farm </h2>
+                                <p>Our Farm is made up of two certified organic properties, where our farmers are
+                                    constantly growing organic vegetables,
+                                    crops, and fruits of the highest quality in India. Thanks to innovative organic
+                                    technologies, our products are always fresh
+                                    and don’t need any treatment. We avoid any artificial additives after harvesting the
+                                    crops to offer you the best organic products.</p>
+                                <button class="btn btn-secondary">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="our-services">
+                    <div class="container">
+                        <h1 class="section-heading">Our services</h1>
+                        <div class="card-wrapper flex">
+                            <div class="service-card magic-shadow-sm">
+                                <img class="icon" src="./icons/transport.svg" alt="">
+                                <h2>Free Home delivery</h2>
+                                <p>Enjoy our fast & free delivery. We provide our products within 2-3 days.</p>
+                                <button class="btn btn-secondary">Read More</button>
+                            </div>
+                            <div class="service-card magic-shadow-sm">
+                                <img class="icon" src="./icons/bag.svg" alt="">
+                                <h2>CUSTOMER CARE</h2>
+                                <p>We are here to help you 24*7 with our online customer care service.</p>
+                                <button class="btn btn-secondary">Read More</button>
+                            </div>
+                            <div class="service-card magic-shadow-sm">
+                                <img class="icon" src="./icons/usd.svg" alt="">
+                                <h2>Money Back Guaranted</h2>
+                                <p>If we do not meet your expectations you have the right to cancel the purchase.</p>
+                                <button class="btn btn-secondary">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="big-deal">
+                    <div class="container">
+                        <h1 class="section-heading text-pure">Big Deals of the Week</h1>
+                        <div class="timer">
+                            <div>
+                                <span>02</span>
+                                <span>Days</span>
+                            </div>
+                            <div>
+                                <span>24</span>
+                                <span>Hours</span>
+                            </div>
+                            <div>
+                                <span>55</span>
+                                <span>Minutes</span>
+                            </div>
+                            <div>
+                                <span>58</span>
+                                <span>Seconds</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="latest-news">
+                    <div class="container">
+                        <h1 class="section-heading">Lastest News from Blog</h1>
+                        <div class="article-wrapper">
+                            <article class="card magic-shadow-sm">
+                                <div>
+                                    <img src="./images/6.jpg" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <div class="post-meta flex items-center justify-between">
+                                        <span>April 20, 2021</span>
+                                        <div>
+                                            <span>Posted by <strong>Organic Farm</strong></span>
+
+                                        </div>
+                                    </div>
+
+                                    <h2>Organic’s Fresh New Look is Here </h2>
+                                    <p>When I started working on Organic field in 2013, never did I think that two years
+                                        later I’ll be launching its first
+                                        flagship store in Delhi. I always thought how fun it would be to have a store,
+                                        with a healthy juice bar and some
+                                        pure vegetables to complete the full circle of what we do here.</p>
+                                </div>
+                            </article>
+                            <article class="card magic-shadow-sm">
+                                <div>
+                                    <img src="./images/veg2.jpg" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <div class="post-meta flex items-center justify-between">
+                                        <span>April 13, 2021</span>
+                                        <div>
+                                            <span>Posted by <strong>Grocery Mania</strong></span>
+                                        </div>
+                                    </div>
+                                    <h2>Organic’s Nutrition Importance </h2>
+                                    <p>Organic foods are grown without the use of pesticides and synthetic fertilizers.
+                                        Organic meats, poultry,
+                                        dairy and eggs all come from animals that have not been raised on antibiotics or
+                                        growth
+                                        hormones. Research has shown that organically grown fruits and vegetables
+                                        retain greater nutritional value than foods grown with pesticides and other
+                                        chemicals.
+                                        The Environmental Working Group (EWG) releases an annual list of the “dirtiest”
+                                        and “cleanest”
+                                        fruits and vegetables available to U.S. consumers. </p>
+                                </div>
+                            </article>
+                            <article class="card magic-shadow-sm">
+                                <div>
+                                    <img src="./images/100.jpg" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <div class="post-meta flex items-center justify-between">
+                                        <span>April 20, 2021</span>
+                                        <div>
+                                            <span>Posted by <strong>Grocery Mania</strong></span>
+
+                                        </div>
+                                    </div>
+
+                                    <h2>Why Organic Farming Keeps Getting Globally Popular</h2>
+                                    <p>Organic foods have gained popularity because people have become aware of their
+                                        benefits. They contain no
+                                        chemical pesticides and fertilizers and are grown naturally with
+                                        manure or compost and only natural pesticides and insecticides are used.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="text-center btn-wrapper">
+                            <button class="btn btn-secondary">View All</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="subscribe">
+                    <div class="container flex items-center">
+                        <div>
+                            <img src="./images/news.png" alt="">
+                        </div>
+                        <div>
+                            <h1>Subscribe to our newsletter</h1>
+                            <p>Sign-up to our newsletter for latest updates on new products, exclusive discounts and
+                                many more to our inbox.</p>
+                            <div class="input-wrap">
+                                <input type="email" placeholder="email@Grocerymania.com">
+                                <button>Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact-us flex">
+                    <div class="contact-info-wrapper">
+                        <h1 class="section-heading">Contact us</h1>
+                        <div class="contact-info">
+                            <div>
+                                <div>
+                                    <img src="./icons/phone-2.svg" alt="">
+                                    <div>
+                                        <span>Call us:</span>
+                                        <span>(+91) 1233456788</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="./icons/bag-2.svg" alt="">
+                                    <div>
+                                        <span>E-mail ::</span>
+                                        <span>Grocerymania@vegetables.com</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="./icons/clock-2.svg" alt="">
+                                    <div>
+                                        <span>Working Hours:</span>
+                                        <span>Mon - Sat (8.00am - 12.00am)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126678.60273824476!2d77.14871460931677!3d28.64673900899423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1619100252186!5m2!1sen!2sin"
+                            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </section>
+
+                <footer>
+                    <div class="container">
+                        <div class="box">
+                            <h3>About us</h3>
+                            <p><b>Grocery Mania</b> is an online shopping website made in 2021 to provide fresh
+                                vegetables to
+                                customers.</p>
+                            <button class="btn btn-secondary">Read More</button>
+                        </div>
+                        <div class="box">
+                            <h3>Quik Links</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Products</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Gallery</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact us</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <h3>Follow Us</h3>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./icons/facebook.svg" alt="">
+                                            <span>Facebook</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./icons/twitter.svg" alt="">
+                                            <span>Twitter</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./icons/google.svg" alt="">
+                                            <span>Google +</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./icons/instagram.svg" alt="">
+                                            <span>Instagram</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box instagram-api">
+                            <h3>Gallery</h3>
+                            <div class="post-wrap">
+                                <div>
+                                    <img src="./images/a.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images/b.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images/c.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images/d.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images/e.jpeg" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images/f.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <footer class="copyright">
+                    <div>
+                        <h3>Copyright © 2020 .All rights reserved by Sravani.
+                        </h3>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/slideShow.js"></script>
+</body>
+
+</html>
